@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Benkortbi</title>
+</head>
+<body>
+	<form action="index.php" method="post">
+		<label for="nom">Nom et Prénom :</label>
+		<input id="nom" type="text" required placeholder="votre nom et prénom" minlength="4" maxlength="30"><br><br>
+
+		<label for="ville">Ville :</label>
+		<input id="ville" type="text" required placeholder="votre ville de résidance"><br><br>
+
+		<label for="mail">Votre email :</label>
+		<input id="mail" type="email" required placeholder="votre email"><br><br>
+
+		<label for="date">Date de naissance :</label>
+		<input id="date" type="date" required><br><br>
+
+		<label for="numero">Numéro de téléphone :</label>
+		<input id="numero" type="tel" pattern="[0]{1}[5-7]{1}[0-9]{8}" placeholder="00 00 00 00 00 " required><br><br>
+
+		<label for="info">A propos de vous :</label><br>
+		<textarea id="info" rows="4" cols="20"></textarea><br><br>
+
+		<label for="ecole">Université :</label>
+		<select id="ecole" name="ecole">
+			<option value="ESGEN">ESGEN</option>
+			<option value="EHEC">EHEC</option>
+			<option value="ESC">ESC</option>
+			<option value="ENSSEA">ENSSEA</option>
+			<option value="ENSM">ENSM</option>
+		</select><br><br>
+
+		<p> Année Universitaire : <br>
+			<input value="1re année cp" id="1re" type="radio" name="Année Universitaire">
+			<label for="1re">1re année cp</label><br>
+			<input value="2e année cp" id="2e" type="radio" name="Année Universitaire">
+			<label for="2e">2e anneée cp</label><br>
+			<input value="3e année tronc commun" id="3e" type="radio" name="Année Universitaire">
+			<label for="3e">3e année tronc commun</label><br>
+			<input value="1e année cycle master" id="M1" type="radio" name="Année Universitaire">
+			<label for="M1">1e année cycle master</label><br>
+			<input value="2e année cycle master" id="M2" type="radio" name="Année Universitaire">
+			<label for="M2">2e année cycle master</label><br>
+		</p>	
+
+		<p> Langues : <br>
+			<input value="Français" id="Français" type="checkbox">
+			<label for="Français">Français</label><br>
+			<input value="Arabe" id="Arabe" type="checkbox">
+			<label for="Arabe">Arabe</label><br>
+			<input value="Anglais" id="Anglais" type="checkbox">
+			<label for="Anglais">Anglais</label><br><br>
+		</p>
+
+		<input type="submit">
+		<input type="reset">
+	</form>
+</body>
+</html>
